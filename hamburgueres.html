@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Conheça os hambúrgueres da Lanchonete do Gordão.">
+    
+    <title>Hambúrgueres | Lanchonete do Gordão</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="Lanchonete do Gordão — página inicial">
+            <span class="logo-mark">G</span>
+            <span>Lanchonete do Gordão<span class="logo-dot">.</span>
+            </span>
+        </a>
+        
+        <nav class="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a><a class="active" href="hamburgueres.html" aria-current="page">Hambúrgueres</a>
+            <a href="pizzas.html">Pizzas</a>
+        </nav>
+        
+        <div class="header-actions">
+            <button class="accessibility-btn" type="button" data-accessibility aria-pressed="false" aria-label="Ativar alto contraste">◐ 
+                <span>Acessibilidade</span>
+            </button>
+            <button class="cart-button" type="button" data-open-cart aria-label="Abrir carrinho">🛒 
+                <span>Carrinho</span>
+                <b class="cart-count" data-cart-count>0</b>
+            </button>
+        </div>
+    </header>
+
+    <main id="conteudo">
+    <section class="menu-hero burger-menu-hero">
+        <div>
+            <p class="eyebrow">MONTADOS COM CAPRICHO</p>
+            <h1>Hambúrgueres<br><em>de respeito.</em></h1>
+            <p>Do clássico ao mais generoso: escolha seu favorito e deixe o resto com a gente.</p>
+        </div>
+
+        <div class="menu-hero-emoji" aria-hidden="true"><img src="img/burger inicial 2.jfif" alt=""></div>
+    </section>
+
+    <section class="section menu-section">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">NOSSO CARDÁPIO</p>
+                <h2>Qual vai ser <em>hoje?</em></h2>
+            </div>
+            <span class="menu-hint">Escolha e adicione ao carrinho</span>
+        </div>
+        
+        <div class="product-grid">
+            <article class="product-card">
+                <div class="product-visual visual-burger">
+                    <img src="img/burger1.jpg" alt="Lanchonete do Gordão Clássico">
+                    <span class="popular-badge">Clássico</span>
+                </div>
+                
+                <div class="product-info">
+                    <div>
+                        <h3>Lanchonete do Gordão Clássico</h3>
+                        <p>Blend artesanal 150g, queijo, alface, tomate e molho da casa.</p>
+                    </div>
+                    <div class="product-bottom">
+                        <strong>R$ 28,90</strong>
+                        <button class="add-button" data-add data-id="burger-classico" data-name="Lanchonete do Gordão Clássico" data-price="28.90" aria-label="Adicionar Lanchonete do Gordão Clássico ao carrinho">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-visual visual-bacon">
+                    <img src="img/burger2.jpg" alt="Cheddar & Bacon">
+                    <span class="popular-badge">Queridinho</span>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3>Cheddar & Bacon</h3>
+                        <p>Blend 150g, cheddar cremoso, bacon crocante e maionese especial.</p>
+                    </div>
+                    <div class="product-bottom"><strong>R$ 32,90</strong>
+                        <button class="add-button" data-add data-id="burger-cheddar" data-name="Cheddar & Bacon" data-price="32.90" aria-label="Adicionar Cheddar e Bacon ao carrinho">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-visual visual-green">
+                    <img src="img/burger3.jpg" alt="Garden Burger">
+                    <span class="popular-badge">Levinho</span>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3>Garden Burger</h3>
+                        <p>Blend 150g, queijo, rúcula, tomate e molho de ervas.</p>
+                    </div>
+                    <div class="product-bottom"><strong>R$ 29,90</strong>
+                        <button class="add-button" data-add data-id="burger-garden" data-name="Garden Burger" data-price="29.90" aria-label="Adicionar Garden Burger ao carrinho">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-visual visual-double">
+                        <img src="img/burger4.jpg" alt="Duplo Lanchonete do Gordão">
+                        <span class="popular-badge">Fome grande</span>
+                    </div>
+                    <div class="product-info"><div>
+                        <h3>Duplo Lanchonete do Gordão</h3>
+                        <p>Dois blends, queijo duplo, cebola caramelizada e molho da casa.</p>
+                    </div>
+                    <div class="product-bottom"><strong>R$ 38,90</strong>
+                        <button class="add-button" data-add data-id="burger-duplo" data-name="Duplo Lanchonete do Gordão" data-price="38.90" aria-label="Adicionar Duplo Lanchonete do Gordão ao carrinho">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-visual visual-spicy">
+                    <img src="img/burger5.jpg" alt="Hot Lanchonete do Gordão">
+                    <span class="popular-badge">Picante</span>
+                </div>
+                <div class="product-info"><div>
+                    <h3>Hot Lanchonete do Gordão</h3>
+                    <p>Blend 150g, queijo pepper jack, jalapeño e molho picante.</p>
+                </div>
+                <div class="product-bottom"><strong>R$ 33,90</strong>
+                    <button class="add-button" data-add data-id="burger-hot" data-name="Hot Lanchonete do Gordão" data-price="33.90" aria-label="Adicionar Hot Lanchonete do Gordão ao carrinho">+</button>
+                </div>
+            </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-visual visual-chicken">
+                    <img src="img/burger6.jpg" alt="Chicken Crispy">
+                    <span class="popular-badge">Crocante</span>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3>Chicken Crispy</h3>
+                        <p>Frango empanado crocante, queijo, alface e maionese temperada.</p>
+                    </div>
+                    <div class="product-bottom"><strong>R$ 27,90</strong>
+                        <button class="add-button" data-add data-id="burger-chicken" data-name="Chicken Crispy" data-price="27.90" aria-label="Adicionar Chicken Crispy ao carrinho">+</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+    </main>
+
+    <footer class="site-footer"><a class="logo footer-logo" href="index.html">
+            <span class="logo-mark">G</span>
+            <span>Lanchonete do Gordão<span class="logo-dot">.</span></span></a>
+            
+        <p>Feito com carinho. Compartilhado com alegria.</p>
+        <span>© 2026 Lanchonete do Gordão</span>
+    </footer>
+
+    <div class="modal-backdrop" data-cart-modal hidden>
+        <section class="cart-modal" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-describedby="cart-description">
+            <div class="modal-header">
+                <div>
+                    <p class="eyebrow">SEU PEDIDO</p>
+                    <h2 id="cart-title">Meu carrinho <span>🛒</span>
+                    </h2>
+                </div>
+                <button class="close-modal" type="button" data-close-cart aria-label="Fechar carrinho">×</button>
+            </div>
+            <p id="cart-description" class="sr-only">Produtos adicionados, quantidades e valor total do pedido.</p>
+            <div class="cart-items" data-cart-items aria-live="polite"></div>
+            <div class="cart-empty" data-cart-empty>
+                <span>🛍️</span>
+                <h3>Seu carrinho está vazio</h3>
+                <p>Que tal escolher algo gostoso?</p>
+            </div>
+            <div class="cart-summary">
+                <span>Total</span>
+                <strong data-cart-total>R$ 0,00</strong>
+            </div>
+            <button class="button button-primary checkout-button" type="button" data-checkout>Continuar pedido</button>
+            <p class="modal-footnote">Pedido demonstrativo — nenhum pagamento será realizado.</p>
+        </section>
+    </div>
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+</body>
+</html>

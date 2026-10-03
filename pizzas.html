@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça as pizzas da Lanchonete do Gordão.">
+    <title>Pizzas | Lanchonete do Gordão</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+
+        <a class="logo" href="index.html" aria-label="Lanchonete do Gordão — página inicial">
+            <span class="logo-mark">G</span>
+            <span>
+                Lanchonete do Gordão<span class="logo-dot">.</span>
+            </span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="hamburgueres.html">Hambúrgueres</a>
+            <a class="active" href="pizzas.html" aria-current="page">Pizzas</a>
+        </nav>
+
+        <div class="header-actions">
+            <button
+                class="accessibility-btn"
+                type="button"
+                data-accessibility
+                aria-pressed="false"
+                aria-label="Ativar alto contraste">◐<span>Acessibilidade</span>
+            </button>
+
+            <button
+                class="cart-button"
+                type="button"
+                data-open-cart
+                aria-label="Abrir carrinho">🛒<span>Carrinho</span>
+                <b class="cart-count" data-cart-count>0</b>
+            </button>
+        </div>
+
+    </header>
+    <main id="conteudo">
+
+        <section class="menu-hero pizza-menu-hero">
+            <div>
+                <p class="eyebrow">UMA FATIA DE FELICIDADE</p>
+                <h1>
+                    Pizzas para<br>
+                    <em>compartilhar.</em>
+                </h1>
+                <p>
+                    Massa gostosa, recheio generoso e combinações que fazem todo mundo querer mais uma fatia.
+                </p>
+            </div>
+
+            <div class="menu-hero-emoji" aria-hidden="true"><img src="img/Pizza Sosis.jfif" alt=""></div>
+        </section>
+
+        <section class="section menu-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">NOSSO CARDÁPIO</p>
+                    <h2>
+                        Feita pra <em>dividir.</em>
+                    </h2>
+                </div>
+
+                <span class="menu-hint">Pizzas grandes — 8 fatias</span>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-visual visual-pizza">
+                        <img src="img/pizza1.jfif" alt="Calabresa">
+                        <span class="popular-badge">
+                            Favorita
+                        </span>
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Calabresa</h3>
+                            <p>
+                                Calabresa fatiada, muçarela, cebola e orégano.
+                            </p>
+                        </div>
+                        <div class="product-bottom">
+                            <strong>R$ 42,90</strong>
+                            <button
+                                class="add-button"
+                                data-add
+                                data-id="pizza-calabresa"
+                                data-name="Pizza Calabresa"
+                                data-price="42.90"
+                                aria-label="Adicionar Pizza Calabresa ao carrinho"
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-visual visual-cheese">
+                        <img src="img/pizza2.jfif" alt="Quatro Queijos">
+                        <span class="popular-badge">
+                            Sem erro
+                        </span>
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <h3>Quatro Queijos</h3>
+                            <p>
+                                Muçarela, parmesão, provolone e gorgonzola.
+                            </p>
+                        </div>
+                        <div class="product-bottom">
+                            <strong>R$ 49,90</strong>
+                            <button
+                                class="add-button"
+                                data-add
+                                data-id="pizza-queijos"
+                                data-name="Pizza Quatro Queijos"
+                                data-price="49.90"
+                                aria-label="Adicionar Pizza Quatro Queijos ao carrinho"
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-visual visual-pepperoni">
+                        <img src="img/pizza33.jpg" alt="Pepperoni">
+                        <span class="popular-badge">
+                            Especial
+                        </span>
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3>Pepperoni</h3>
+                            <p>
+                                Pepperoni, muçarela, molho artesanal e orégano.
+                            </p>
+                        </div>
+                        <div class="product-bottom">
+                            <strong>R$ 48,90</strong>
+                            <button
+                                class="add-button"
+                                data-add
+                                data-id="pizza-pepperoni"
+                                data-name="Pizza Pepperoni"
+                                data-price="48.90"
+                                aria-label="Adicionar Pizza Pepperoni ao carrinho"
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-visual visual-chicken-pizza">
+                        <img src="img/pizza4.jfif" alt="Frango com Catupiry">
+                        <span class="popular-badge">
+                            Cremosa
+                        </span>
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3>Frango com Catupiry</h3>
+                            <p>
+                                Frango desfiado, catupiry, muçarela e cheiro-verde.
+                            </p>
+                        </div>
+                        <div class="product-bottom">
+                            <strong>R$ 47,90</strong>
+                            <button
+                                class="add-button"
+                                data-add
+                                data-id="pizza-frango"
+                                data-name="Pizza Frango com Catupiry"
+                                data-price="47.90"
+                                aria-label="Adicionar Pizza Frango com Catupiry ao carrinho"
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-visual visual-margherita">
+                        <img src="img/pizza55.jpg" alt="Margherita">
+                        <span class="popular-badge">
+                            Leve e fresca
+                        </span>
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3>Margherita</h3>
+                            <p>
+                                Muçarela, tomate fresco, manjericão e azeite.
+                            </p>
+                        </div>
+                        <div class="product-bottom">
+                            <strong>R$ 43,90</strong>
+                            <button
+                                class="add-button"
+                                data-add
+                                data-id="pizza-margherita"
+                                data-name="Pizza Margherita"
+                                data-price="43.90"
+                                aria-label="Adicionar Pizza Margherita ao carrinho"
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-visual visual-chocolate">
+                        <img src="img/pizza66.jpg" alt="Chocolate">
+                        <span class="popular-badge">
+                            Doce
+                        </span>
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3>Chocolate</h3>
+                            <p>
+                                Chocolate cremoso e granulado crocante.
+                            </p>
+                        </div>
+                        <div class="product-bottom">
+                            <strong>R$ 45,90</strong>
+                            <button
+                                class="add-button"
+                                data-add
+                                data-id="pizza-chocolate"
+                                data-name="Pizza Chocolate"
+                                data-price="45.90"
+                                aria-label="Adicionar Pizza de Chocolate ao carrinho"
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo footer-logo" href="index.html">
+            <span class="logo-mark">G</span>
+            <span>
+                Lanchonete do Gordão<span class="logo-dot">.</span>
+            </span>
+        </a>
+        <p>
+            Feito com carinho. Compartilhado com alegria.
+        </p>
+        <span>
+            © 2026 Lanchonete do Gordão
+        </span>
+    </footer>
+
+    <div class="modal-backdrop" data-cart-modal hidden>
+        <section
+            class="cart-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="cart-title"
+            aria-describedby="cart-description"
+        >
+            <div class="modal-header">
+                <div>
+                    <p class="eyebrow">
+                        SEU PEDIDO
+                    </p>
+                    <h2 id="cart-title">
+                        Meu carrinho <span>🛒</span>
+                    </h2>
+                </div>
+                <button
+                    class="close-modal"
+                    type="button"
+                    data-close-cart
+                    aria-label="Fechar carrinho"
+                >
+                    ×
+                </button>
+            </div>
+            <p id="cart-description" class="sr-only">
+                Produtos adicionados, quantidades e valor total do pedido.
+            </p>
+            <div
+                class="cart-items"
+                data-cart-items
+                aria-live="polite"
+            ></div>
+            <div class="cart-empty" data-cart-empty>
+                <span>🛍️</span>
+                <h3>
+                    Seu carrinho está vazio
+                </h3>
+                <p>
+                    Que tal escolher algo gostoso?
+                </p>
+            </div>
+            <div class="cart-summary">
+                <span>
+                    Total
+                </span>
+                <strong data-cart-total>
+                    R$ 0,00
+                </strong>
+            </div>
+            <button
+                class="button button-primary checkout-button"
+                type="button"
+                data-checkout
+            >
+                Continuar pedido
+            </button>
+            <p class="modal-footnote">
+                Pedido demonstrativo — nenhum pagamento será realizado.
+            </p>
+        </section>
+    </div>
+    <div
+        class="toast"
+        data-toast
+        role="status"
+        aria-live="polite"
+    ></div>
+</body>
+</html>
